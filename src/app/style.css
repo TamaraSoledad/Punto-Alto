@@ -1,0 +1,406 @@
+body {
+  font-family: "Sora", sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 6.25rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #cdf9ff;
+  opacity: 1;
+  z-index: 10;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #cdf9ff;
+  img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    float: right;
+  }
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #151824;
+  list-style: none;
+}
+
+.border-right {
+  padding-right: 1rem;
+}
+
+.section-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 17.875rem;
+  padding-top: 6.25rem;
+  background-size: cover;
+
+  h1 {
+    font-weight: 600;
+    font-size: 100px;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;
+  }
+}
+
+.info-index,
+.info-tapestry {
+  background-position: center bottom;
+}
+
+.info-index {
+  background-image: url(../../assets/coleccion-hilo-suave.jpg);
+}
+
+.info-tapestry {
+  background-image: url(../../assets/decoracion-sueter-patines-hielo-percha.jpg);
+  opacity: 0.5;
+}
+
+.info-crochet {
+  background-image: url(../../assets/vista-arriba-ganchillo-peluche-naturaleza-muerta.jpg);
+  opacity: 0.5;
+  background-position: center top;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+.title {
+  position: absolute;
+  left: 1rem;
+  color: #151824;
+  h1 {
+    margin: 0rem;
+  }
+}
+
+.profile {
+  position: absolute;
+  right: 1rem;
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  background-image: url(../../assets/descarga.jpeg);
+  background-position: center top;
+  background-size: cover;
+}
+
+a:-webkit-any-link {
+  color: #151824;
+  text-decoration: none;
+}
+
+.section-screen {
+  padding: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+
+  img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff4668;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff4668;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  resize: none;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ff4668;
+  border-color: #ff4668;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #ff4668;
+}
+
+.title-section {
+  padding-top: 3.75rem;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.subtitle-section {
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #0e0e0e;
+}
+
+.pattern-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .icon-plus {
+    font-size: 64px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  a {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: 400;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: #ff4668;
+    margin-bottom: 4rem;
+  }
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid #ff4668;
+}
+
+textarea:focus {
+  outline: 0;
+  border: 1px solid #ff4668;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      width: 238px;
+    }
+    img {
+      border-radius: 10px;
+      border: 1px solid #ff4668;
+      object-fit: cover;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.image-container:last-child {
+  margin-right: 0;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframe-screen {
+  padding-top: 6.25rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.file-select {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.file-select::before {
+  background-color: #ff4668;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  content: "Seleccionar";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.file-select input[type="file"] {
+  cursor: pointer;
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
+
+#src-file1::before {
+  content: "Subir imagen Nº 1";
+}
+
+#src-file2::before {
+  content: "Subir imagen Nº 2";
+}
+
+#src-file3::before {
+  content: "Subir imagen Nº 3";
+}
+
+#src-file4::before {
+  content: "Subir imagen Nº 4";
+}
+
+#src-file5::before {
+  content: "Subir imagen Nº 5";
+}
+
+#src-file6::before {
+  content: "Subir imagen Nº 6";
+}
+
+.perform-crochet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.25rem;
+  input,
+  textarea {
+    width: 60%;
+  }
+  textarea {
+    margin-bottom: 2rem;
+  }
+  .button-submit {
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    background-color: #ff4668;
+    margin-top: 5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.preview-container {
+  margin-top: 6.25rem;
+  .title-preview {
+    font-size: 48px;
+    text-align: center;
+  }
+  ul,
+  p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+  img {
+    margin-top: 5rem;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.575rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cdf9ff;
+  border-radius: 0.5rem;
+}
