@@ -1,6 +1,10 @@
-@charset "UTF-8";
+$font-family: "Sora", sans-serif;
+$primary: #cdf9ff;
+$accent: #ff4668;
+$text: #0e0e0e;
+
 body {
-  font-family: "Sora", sans-serif;
+  font-family: $font-family;
   margin: 0;
 }
 
@@ -11,7 +15,7 @@ header {
   height: 6.25rem;
   align-items: center;
   justify-content: center;
-  background-color: #cdf9ff;
+  background-color: $primary;
   opacity: 1;
   z-index: 10;
 }
@@ -19,13 +23,13 @@ header {
 footer {
   width: 100%;
   height: 70px;
-  background-color: #cdf9ff;
-}
-footer img {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 2rem;
-  float: right;
+  background-color: $primary;
+  img {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    float: right;
+  }
 }
 
 nav ul {
@@ -48,13 +52,15 @@ nav ul {
   height: 17.875rem;
   padding-top: 6.25rem;
   background-size: cover;
-}
-.section-info h1 {
-  font-weight: 600;
-  font-size: 100px;
-  color: #fff;
-  opacity: 1;
-  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+
+  h1 {
+    font-weight: 600;
+    font-size: 100px;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;
+  }
 }
 
 .info-index,
@@ -85,9 +91,9 @@ li {
   position: absolute;
   left: 1rem;
   color: #151824;
-}
-.title h1 {
-  margin: 0rem;
+  h1 {
+    margin: 0rem;
+  }
 }
 
 .profile {
@@ -117,13 +123,14 @@ a:-webkit-any-link {
   justify-items: center;
   grid-column-gap: 32px;
   grid-row-gap: 32px;
-}
-.grid img {
-  object-fit: cover;
-  width: 250px;
-  height: 250px;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+
+  img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
 .grid-item {
@@ -169,7 +176,7 @@ input {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: #ff4668;
+  border-color: $accent;
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -182,7 +189,7 @@ textarea {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: #ff4668;
+  border-color: $accent;
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -202,8 +209,8 @@ button {
   margin-bottom: 20px;
   margin-top: 10px;
   text-transform: uppercase;
-  background-color: #ff4668;
-  border-color: #ff4668;
+  background-color: $accent;
+  border-color: $accent;
   border-style: solid;
   border-radius: 10px;
   width: 420px;
@@ -215,7 +222,7 @@ button p {
 }
 
 span {
-  color: #ff4668;
+  color: $accent;
 }
 
 .title-section {
@@ -231,36 +238,38 @@ span {
   font-weight: 300;
   padding-bottom: 30px;
   text-align: center;
-  color: #0e0e0e;
+  color: $text;
 }
 
 .pattern-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.pattern-container .icon-plus {
-  font-size: 64px;
-  font-weight: 300;
-  color: #fff;
-}
-.pattern-container a {
-  width: 22rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  color: #fff;
-  font-weight: 400;
-  font-size: 32px;
-  border-radius: 10px;
-  background-color: #ff4668;
-  margin-bottom: 4rem;
+
+  .icon-plus {
+    font-size: 64px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  a {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: 400;
+    font-size: 32px;
+    border-radius: 10px;
+    background-color: $accent;
+    margin-bottom: 4rem;
+  }
 }
 
 p {
   font-size: 14px;
-  color: #0e0e0e;
+  color: $text;
 }
 
 ::-webkit-input-placeholder {
@@ -273,12 +282,12 @@ p {
 
 input:focus {
   outline: 0;
-  border: 1px solid #ff4668;
+  border: 1px solid $accent;
 }
 
 textarea:focus {
   outline: 0;
-  border: 1px solid #ff4668;
+  border: 1px solid $accent;
 }
 
 .images-container {
@@ -288,21 +297,21 @@ textarea:focus {
   justify-items: center;
   grid-column-gap: 32px;
   grid-row-gap: 32px;
-}
-.images-container .image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.images-container .image-container input {
-  width: 238px;
-}
-.images-container .image-container img {
-  border-radius: 10px;
-  border: 1px solid #ff4668;
-  object-fit: cover;
-  width: 120px;
-  height: 120px;
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      width: 238px;
+    }
+    img {
+      border-radius: 10px;
+      border: 1px solid $accent;
+      object-fit: cover;
+      width: 120px;
+      height: 120px;
+    }
+  }
 }
 
 .image-container:last-child {
@@ -329,7 +338,7 @@ textarea:focus {
 }
 
 .file-select::before {
-  background-color: #ff4668;
+  background-color: $accent;
   color: white;
   display: flex;
   justify-content: center;
@@ -343,7 +352,7 @@ textarea:focus {
   bottom: 0;
 }
 
-.file-select input[type=file] {
+.file-select input[type="file"] {
   cursor: pointer;
   opacity: 0;
   width: 200px;
@@ -380,44 +389,44 @@ textarea:focus {
   flex-direction: column;
   align-items: center;
   padding-top: 6.25rem;
-}
-.perform-crochet-container input,
-.perform-crochet-container textarea {
-  width: 60%;
-}
-.perform-crochet-container textarea {
-  margin-bottom: 2rem;
-}
-.perform-crochet-container .button-submit {
-  padding: 1rem 5rem;
-  border-radius: 10px;
-  background-color: #ff4668;
-  margin-top: 5rem;
-  color: #fff;
-  font-weight: bold;
+  input,
+  textarea {
+    width: 60%;
+  }
+  textarea {
+    margin-bottom: 2rem;
+  }
+  .button-submit {
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    background-color: $accent;
+    margin-top: 5rem;
+    color: #fff;
+    font-weight: bold;
+  }
 }
 
 .preview-container {
   margin-top: 6.25rem;
-}
-.preview-container .title-preview {
-  font-size: 48px;
-  text-align: center;
-}
-.preview-container ul,
-.preview-container p {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 24px;
-}
-.preview-container img {
-  margin-top: 5rem;
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  .title-preview {
+    font-size: 48px;
+    text-align: center;
+  }
+  ul,
+  p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+  img {
+    margin-top: 5rem;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -429,8 +438,6 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cdf9ff;
+  background: $primary;
   border-radius: 0.5rem;
 }
-
-/*# sourceMappingURL=style.css.map */

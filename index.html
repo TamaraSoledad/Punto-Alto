@@ -1,74 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Punto Alto</title>
-    <meta charset="UTF-8" />
-    <meta name="title" content="Punto Alto" />
-    <meta name="description" content="Punto Alto | Página de Tejido" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./src/app/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html" class="title">
-        <h1>Punto Alto</h1>
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="./src/app/crochet.html" class="border-right">Crochet</a>
-          </li>
-          <li>
-            <a href="./src/app/tapestry.html" class="border-right">Tapestry</a>
-          </li>
-          <li>
-            <a href="./src/app/pattern.html" class="border-right"
-              >Crear Patrón</a
-            >
-          </li>
-          <li><a href="./src/app/contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <a href="" class="profile"></a>
-    </header>
+<head>
+  <title>Punto Alto</title>
+  <meta charset="UTF-8" />
+  <meta name="title" content="Punto Alto" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <meta name="description" content="Punto Alto | Página de Tejido" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="./src/app/style.css" rel="stylesheet" />
+  <script src="./src/app/searchItem.js" defer></script>
+</head>
 
-    <section class="section-info info-index">
-      <input type="text" placeholder="¿Qué estás buscando?" />
-    </section>
+<body>
+  <header>
+    <a href="index.html" class="title">
+      <h1>Punto Alto</h1>
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="./src/app/crochet.html" class="border-right">Crochet</a>
+        </li>
+        <li>
+          <a href="./src/app/tapestry.html" class="border-right">Tapestry</a>
+        </li>
+        <li>
+          <a href="./src/app/pattern.html" class="border-right">Crear Patrón</a>
+        </li>
+        <li><a href="./src/app/contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="" class="profile"></a>
+  </header>
 
-    <section class="section-screen">
-      <article class="grid">
-        <img src="./assets/textura-punto-color.jpg" />
-        <img src="./assets/patron-hecho-lana-colorida.jpg" />
-        <img src="./assets/baberos-estrellas-hechos-lana.jpg" />
-        <img
+  <section class="section-info info-index">
+    <input type="text" placeholder="¿Qué estás buscando?" />
+  </section>
+
+  <section class="section-screen">
+    <article class="grid">
+      <div class="grid-item">
+        <img src="./assets/textura-punto-color.jpg" alt="Paneles Versátiles" />
+        <p class="description">Patrón de Tejido Doble Punto - "Paneles Versátiles"
+
+          • Dificultad: Principiante
+
+          • Materiales: Hilos de varios colores, aguja de crochet
+
+          • Tamaño del Proyecto: Variable (ideal para mantas, cojines)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/patron-hecho-lana-colorida.jpg" alt="Colores Clásicos" />
+        <p class="description">Granny Squares - "Colores Clásicos"
+
+          • Dificultad: Principiante
+
+          • Materiales: Hilos de varios colores, aguja de crochet
+
+          • Tamaño del Proyecto: Variable (ideal para mantas, cojines)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/baberos-estrellas-hechos-lana.jpg" alt="Estrellas" />
+        <p class="description">Estrellas - "Brillo Celestial"
+
+          • Dificultad: Intermedio
+
+          • Materiales: Hilo brillante, aguja de crochet
+
+          • Tamaño del Proyecto: Variable (ideal para decoraciones festivas)</p>
+      </div>
+      <div class="grid-item"><img
           src="./assets/Frog knitting pattern & the most adorable stripy sweater! - From Britain with Love.jpg"
-        />
-        <img src="./assets/Gorros A Ganchillo Para Niдos De 6 Mese.jpg" />
-        <img src="./assets/baby snoopy.jpg" />
-        <img src="./assets/18 Cuddly Cow Crochet Patterns.jpg" />
-        <img src="./assets/Colcifer.jpg" />
-        <img src="./assets/48b81088-5a59-41e7-9de1-ceb645f38aec.jpg" />
-        <img src="./assets/That's My Girl Tapestry.jpg" />
-        <img src="./assets/Tapestry_Crochet_Mushroom_Pothol.jpg" />
-        <img src="./assets/e9b4645c-760c-4e83-a9e3-6a7d9a43f826.jpg" />
-      </article>
-    </section>
+          alt="Ranita con Suéter y Flor" />
+        <p class="description">Ranita con Suéter y Flor - "Dulce Conjunto"
 
-    <footer>
-      <a href=""><img src="./assets/logo-x.svg" alt="X Logo" /></a>
-      <a href=""
-        ><img src="./assets/logo-instagram.svg" alt="Instagram Logo"
-      /></a>
-      <a href=""
-        ><img src="./assets/logo-facebook.svg" alt="Facebook Logo"
-      /></a>
-    </footer>
-  </body>
+          • Dificultad: Intermedio
+
+          • Materiales: Hilo de algodón, y aguja de crochet
+
+          • Tamaño del Proyecto: Pequeño</p>
+      </div>
+      <div class="grid-item"><img src="./assets/Gorros A Ganchillo Para Niдos De 6 Mese.jpg" alt="Gorro de Oso" />
+        <p class="description">Gorro de Oso - "Calidez
+          Adorable"
+
+          • Dificultad: Principiante
+
+          • Materiales: Hilo suave, aguja de crochet
+
+          • Tamaño del Proyecto: Ajustable (para adultos y niños)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/baby snoopy.jpg" alt="Tapestry de Snoopy" />
+        <p class="description">Tapestry de Snoopy - "Diversión Animada"
+
+          • Dificultad: Intermedio
+
+          • Materiales: Hilos de colores y aguja
+
+          • Tamaño del Proyecto: Variable (ideal para decoración)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/18 Cuddly Cow Crochet Patterns.jpg" alt="Vaquita Blanca y Rosa" />
+        <p class="description">Vaquita Blanca y Rosa - "Dulzura Bovina"
+
+          • Dificultad: Principiante
+
+          • Materiales: Hilo de colores, aguja de crochet
+
+          • Tamaño del Proyecto: Ajustable (ideal para decoración infantil)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/Colcifer.jpg" alt="Tapestry de Calcifer" />
+        <p class="description">Tapestry de Calcifer - (Howl's Moving Castle)
+
+          • Dificultad: Avanzado
+
+          • Materiales: Hilos de colores variados y aguja
+
+          • Tamaño del Proyecto: Variable (ideal para colgar)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/48b81088-5a59-41e7-9de1-ceb645f38aec.jpg" alt="Bufanda de Gato" />
+        <p class="description">Bufanda de Gato - "Elegancia Felina"
+
+          • Dificultad: Intermedio
+
+          • Materiales: Hilo suave, aguja de crochet
+
+          • Tamaño del Proyecto: Ajustable (ideal para adultos)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/That's My Girl Tapestry.jpg" alt="Howl's Castle Tapestry" />
+        <p class="description">Howl's Castle Tapestry - "Viaje Tejido"
+
+          • Dificultad: Avanzado
+
+          • Materiales: Hilos de colores variados y aguja
+
+          • Tamaño del Proyecto: Variable (ideal para colgar)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/Tapestry_Crochet_Mushroom_Pothol.jpg" alt="Hongo Tapestry" />
+        <p class="description">Hongo Tapestry - "Aventuras en el Bosque"
+
+          • Dificultad: Intermedio
+
+          • Materiales: Hilos de colores variados y aguja
+
+          • Tamaño del Proyecto: Variable (ideal para colgar)</p>
+      </div>
+      <div class="grid-item"><img src="./assets/e9b4645c-760c-4e83-a9e3-6a7d9a43f826.jpg" alt="Suculenta en Maceta" />
+        <p class="description">Suculenta en Maceta - "Naturaleza Colgante"
+
+          • Dificultad: Principiante
+
+          • Materiales: Hilo de colores, y aguja de crochet
+
+          • Tamaño del Proyecto: Pequeño (ideal para decoración de interiores)</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <a href=""><img src="./assets/logo-x.svg" alt="X Logo" /></a>
+    <a href=""><img src="./assets/logo-instagram.svg" alt="Instagram Logo" /></a>
+    <a href=""><img src="./assets/logo-facebook.svg" alt="Facebook Logo" /></a>
+  </footer>
+</body>
+
 </html>

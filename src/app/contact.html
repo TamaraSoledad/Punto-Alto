@@ -1,129 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Punto Alto</title>
-    <meta charset="UTF-8" />
-    <meta name="title" content="Punto Alto" />
-    <meta name="description" content="Punto Alto | Página de Tejido" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <a href="../../index.html" class="title">
-        <h1>Punto Alto</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./crochet.html" class="border-right">Crochet</a></li>
-          <li><a href="./tapestry.html" class="border-right">Tapestry</a></li>
-          <li>
-            <a href="./pattern.html" class="border-right">Crear Patrón</a>
-          </li>
-          <li>
-            <a href="./contact.html"><strong>Contacto</strong></a>
-          </li>
-        </ul>
-      </nav>
-      <a href="" class="profile"></a>
-    </header>
-    <section class="section-screen">
-      <div class="contact-form">
-        <div class="form-container">
-          <h1 class="title-section">Formulario de contacto</h1>
-          <h3 class="subtitle-section">
-            Escríbenos y en breve nos pondremos en contacto contigo
-          </h3>
+<head>
+  <title>Punto Alto</title>
+  <meta charset="UTF-8" />
+  <meta name="title" content="Punto Alto" />
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+  <meta name="description" content="Punto Alto | Página de Tejido" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-          <form class="form-items">
-            <p>
-              <label for="nombre" class="colocar_nombre"
-                >Nombre
-                <span class="obligatorio">*</span>
-              </label>
-              <input
-                type="text"
-                name="introducir_nombre"
-                id="nombre"
-                required
-                placeholder="Escribe tu nombre"
-              />
-            </p>
+<body>
+  <header>
+    <a href="../../index.html" class="title">
+      <h1>Punto Alto</h1>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./crochet.html" class="border-right">Crochet</a></li>
+        <li><a href="./tapestry.html" class="border-right">Tapestry</a></li>
+        <li>
+          <a href="./pattern.html" class="border-right">Crear Patrón</a>
+        </li>
+        <li>
+          <a href="./contact.html"><strong>Contacto</strong></a>
+        </li>
+      </ul>
+    </nav>
+    <a href="" class="profile"></a>
+  </header>
+  <section class="section-screen">
+    <div class="contact-form">
+      <div class="form-container">
+        <h1 class="title-section">Formulario de contacto</h1>
+        <h3 class="subtitle-section">
+          Escríbenos y en breve nos pondremos en contacto contigo
+        </h3>
 
-            <p>
-              <label for="email" class="colocar_email"
-                >Email
-                <span class="obligatorio">*</span>
-              </label>
-              <input
-                type="email"
-                name="introducir_email"
-                id="email"
-                required
-                placeholder="Escribe tu Email"
-              />
-            </p>
+        <form class="form-items">
+          <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre" />
+          </p>
 
-            <p>
-              <label for="telefone" class="colocar_telefono">Teléfono </label>
-              <input
-                type="tel"
-                name="introducir_telefono"
-                id="telefono"
-                placeholder="Escribe tu teléfono"
-              />
-            </p>
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email" />
+          </p>
 
-            <p>
-              <label for="asunto" class="colocar_asunto"
-                >Asunto
-                <span class="obligatorio">*</span>
-              </label>
-              <input
-                type="text"
-                name="introducir_asunto"
-                id="assunto"
-                required
-                placeholder="Escribe un asunto"
-              />
-            </p>
+          <p>
+            <label for="telefone" class="colocar_telefono">Teléfono </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" />
+          </p>
 
-            <p>
-              <label for="mensaje" class="colocar_mensaje"
-                >Mensaje
-                <span class="obligatorio">*</span>
-              </label>
-              <textarea
-                name="introducir_mensaje"
-                class="texto_mensaje"
-                id="mensaje"
-                required
-                placeholder="Deja aquí tu comentario..."
-              ></textarea>
-            </p>
+          <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required placeholder="Escribe un asunto" />
+          </p>
 
-            <button type="submit" name="enviar_formulario" id="enviar">
-              <p>Enviar</p>
-            </button>
-          </form>
-        </div>
+          <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <a href=""><img src="../../assets/logo-x.svg" alt="X Logo" /></a>
-      <a href=""
-        ><img src="../../assets/logo-instagram.svg" alt="Instagram Logo"
-      /></a>
-      <a href=""
-        ><img src="../../assets/logo-facebook.svg" alt="Facebook Logo"
-      /></a>
-    </footer>
-  </body>
+  <footer>
+    <a href=""><img src="../../assets/logo-x.svg" alt="X Logo" /></a>
+    <a href=""><img src="../../assets/logo-instagram.svg" alt="Instagram Logo" /></a>
+    <a href=""><img src="../../assets/logo-facebook.svg" alt="Facebook Logo" /></a>
+  </footer>
+</body>
+
 </html>
